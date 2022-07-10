@@ -33,3 +33,23 @@
 ### detach and attach
 *   docker run -d `IMAGE-NAME`
 *   docker attach `CONTAINER-NAME` or `CONTAINER-ID`
+
+### run - tag
+*   docker run `IMAGE-NAME`:`tag`
+
+#### run - stdin
+*   docker run -it `IMAGE-NAME`
+*   -i for interactive
+*   -t for psedu terminal
+
+### run - port mapping
+*   docker run -p `free port on docker host`:`port inside of docker container` `IMAGE-NAME`
+
+### run - volume mapping
+*   docker run -v `DIRECTORY OUTSIDE`:`DIRECTORY INSIDE` `IMAGE-NAME`
+
+### inspect
+*   docker inspect `CONTAINER-NAME`
+
+### logs
+*   docker log `CONTAINER-NAME`
