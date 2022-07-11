@@ -53,3 +53,8 @@
 
 ### logs
 *   docker log `CONTAINER-NAME`
+
+## Dockerfile
+### INSTRUCTION ARGUMENT
+*   FROM, RUN, COPY, ENTRYOINT
+*   sudo docker build . -f `DOCKER-FILE-NAME` -t `IMAGE-NAME`
