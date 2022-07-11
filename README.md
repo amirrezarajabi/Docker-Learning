@@ -54,7 +54,11 @@
 ### logs
 *   docker log `CONTAINER-NAME`
 
-## Dockerfile
+### environment variables
+*   -e for export
+*   docker run -e `EV=ev`  `IMAGE-NAME`
+
+* Dockerfile
 ### INSTRUCTION ARGUMENT
 *   FROM, RUN, COPY, ENTRYOINT
 *   sudo docker build . -f `DOCKER-FILE-NAME` -t `IMAGE-NAME`
