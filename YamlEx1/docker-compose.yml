@@ -1,22 +1,22 @@
 redis:
-	image: redis
+  image: redis
 db:
-	image: postgres:9.4
+  image: postgres:9.4
 vote:
-	image: voting-app
-	ports:
-		- 5000:80
-	links:
-		- redis
+  image: voting-app
+  ports:
+    - 5000:80
+  links:
+    - redis
 result:
-	image: result-app
-	ports:
-		- 5001:80
-	links:
-		- db
+  image: result-app
+  ports:
+    - 5001:80
+  links:
+    - db
 
 worker:
-	image: worker
-	links:
-		- redis
-		- db
+  image: worker
+  links:
+    - redis
+    - db
