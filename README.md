@@ -58,7 +58,18 @@
 *   -e for export
 *   docker run -e `EV=ev`  `IMAGE-NAME`
 
-* Dockerfile
+## Dockerfile
 ### INSTRUCTION ARGUMENT
 *   FROM, RUN, COPY, ENTRYOINT
 *   sudo docker build . -f `DOCKER-FILE-NAME` -t `IMAGE-NAME`
+
+## Docker compose
+*   yaml file docker-compose.yml
+*   docker-compose up
+
+### name
+*   docker run --name=`NAME` `IMAGE-NAME`
+
+### link - connecting 2 containers for using each other
+*   docker run -d --name=`NAME` redis
+*   docker run -d --name=vote -p 5000:80 --link redis:`NAME` voting-app
